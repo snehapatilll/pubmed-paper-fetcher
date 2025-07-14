@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.env.*
+.cache/
+dist/
+build/
+*.egg-info/
+poetry.lock

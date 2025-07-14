@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "pubmed-paper-fetcher"
+version = "0.1.0"
+description = "Fetch PubMed papers with pharma/biotech authors"
+authors = ["Sneha Patil <you@example.com>"]
+packages = [
+    { include = "get_papers", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.31.0"
+typer = "^0.9.0"
+lxml = "^5.2.1"
+
+[tool.poetry.scripts]
+get-papers-list = "get_papers.cli:app"
